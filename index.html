@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NKR WORKS – Precision Scale Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+      --accent: #e60023;
+      --light: #f5f5f5;
+      --max-width: 1080px;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #eee;
+    }
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      font-size: 14px;
+    }
+    .logo span {
+      color: var(--accent);
+    }
+    .nav-links a {
+      margin-left: 20px;
+      font-size: 14px;
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .nav-links a:hover {
+      color: var(--text);
+    }
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+      padding: 40px 0 60px;
+    }
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hero-title {
+      font-size: 40px;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+    }
+    .hero-sub {
+      color: var(--muted);
+      max-width: 420px;
+      margin-bottom: 24px;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border-radius: 999px;
+      padding: 10px 22px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #ddd;
+    }
+    .hero-image {
+      background: var(--light);
+      border-radius: var(--radius);
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      padding: 40px 0;
+      border-top: 1px solid #f0f0f0;
+    }
+    .section-title {
+      font-size: 20px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .section-sub {
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 18px 18px 20px;
+    }
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .card-text {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .card-link {
+      font-size: 13px;
+      text-decoration: none;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .about-text p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .pill {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid #e0e0e0;
+      color: var(--muted);
+    }
+    .contact-block {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 20px;
+      font-size: 14px;
+    }
+    .contact-block a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      padding: 18px 20px 30px;
+      font-size: 12px;
+      color: #999;
+    }
+    footer .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">NKR <span>WORKS</span></div>
+      <nav class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1 class="hero-title">Precision‑Engineered<br />Scale Models</h1>
+        <p class="hero-sub">
+          Designed and made in New Zealand for modellers who care about detail,
+          accuracy, and reliability.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+            View Products
+          </button>
+          <button class="btn btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            About NKR WORKS
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        Product image placeholder<br />
+        (Add a clean photo of your best model here)
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-sub">
+        A growing range of precision components and rolling stock, designed for smooth running and clean, modern detail.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">N‑Scale Bogie Pack</div>
+          <div class="card-text">
+            High‑precision resin bogies for reliable running and sharp, modern geometry.
+          </div>
+          <a href="#" class="card-link">Learn more</a>
+        </div>
+        <div class="card">
+          <div class="card-title">Detail Components</div>
+          <div class="card-text">
+            Small‑scale parts to refine your rolling stock and layouts.
+          </div>
+          <a href="#" class="card-link">View range</a>
+        </div>
+        <div class="card">
+          <div class="card-title">Upcoming Releases</div>
+          <div class="card-text">
+            New models and accessories currently in development at NKR WORKS.
+          </div>
+          <a href="#" class="card-link">Join updates</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="section-title">About NKR WORKS</h2>
+      <div class="about-text">
+        <p>
+          NKR WORKS is a New Zealand‑based maker of precision scale‑model components and rolling stock.
+        </p>
+        <p>
+          Each design is built from the ground up with clean geometry, reliable operation, and a focus on modern, minimal aesthetics.
+        </p>
+        <p>
+          Whether you’re building a detailed layout or a display model, NKR WORKS aims to provide parts that feel engineered, not improvised.
+        </p>
+      </div>
+      <div class="pill-row">
+        <div class="pill">Made in New Zealand</div>
+        <div class="pill">Precision‑Engineered</div>
+        <div class="pill">Small‑Batch Production</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">
+        For orders, retailer enquiries, or collaboration, reach out directly. A simple message can start a new project.
+      </p>
+      <div class="contact-block">
+        <p>Email:<br />
+          <a href="mailto:contact@nkrworks.co.nz">contact@nkrworks.co.nz</a>
+        </p>
+        <p style="margin-top:10px;">
+          Social (optional):<br />
+          <a href="#">Instagram</a> · <a href="#">Facebook</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© NKR WORKS · Made in New Zealand</div>
+      <div>Precision‑engineered scale models</div>
+    </div>
+  </footer>
+</body>
+</html>
