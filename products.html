@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NKR WORKS – Product Range</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #e60023; }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .product-card h3 { margin: 10px 0 5px; }
+    .product-card p { margin: 0; color: #333; }
+  </style>
+</head>
+<body>
+  <h1>Product Range</h1>
+  <p>Browse our current models and prices.</p>
 
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/product1.jpg" alt="N Scale Bogie Pack">
+      <h3>N‑Scale Bogie Pack</h3>
+      <p>$25.00</p>
+    </div>
+    <div class="product-card">
+      <img src="images/product2.jpg" alt="Coupler Set">
+      <h3>Coupler Set</h3>
+      <p>$15.00</p>
+    </div>
+    <div class="product-card">
+      <img src="images/product3.jpg" alt="HO‑Scale Wagon Kit">
+      <h3>HO‑Scale Wagon Kit</h3>
+      <p>$40.00</p>
+    </div>
+  </div>
+</body>
+</html>
